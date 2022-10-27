@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrownd2"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/logotype"
+        android:layout_weight="50"/>
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/user"
+        android:layout_weight="9"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:layout_weight="9"
+        android:drawableLeft="@drawable/lock"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bttnlogin"
+                android:layout_width="200sp"
+                android:layout_height="75sp"
+                android:layout_margin="15dp"
+                android:layout_weight="100"
+                android:background="#DDD372C9"
+                android:text="@string/Alumno"
+                android:textColor="@android:color/primary_text_dark_nodisable"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/bttnloginmas"
+                android:layout_width="200sp"
+                android:layout_height="75sp"
+                android:layout_margin="15dp"
+                android:layout_weight="100"
+                android:background="#DDD372C9"
+                android:text="@string/Maestro"
+                android:textColor="@android:color/primary_text_dark_nodisable"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

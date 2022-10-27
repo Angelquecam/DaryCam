@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil"
+    android:background="#DAD5D5">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txttelM"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtApellidoM"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidoM" />
+
+    <TextView
+        android:id="@+id/txtnumcontrolM"
+        android:layout_width="271dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtApellidoM"
+        android:layout_width="266dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreM"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreM" />
+
+    <TextView
+        android:id="@+id/txtNombreM"
+        android:layout_width="264dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailM"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailM" />
+
+    <TextView
+        android:id="@+id/txtEmailM"
+        android:layout_width="267dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtnumcontrolM"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumcontrolM" />
+
+    <ImageButton
+        android:id="@+id/btnHOme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logotype1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
