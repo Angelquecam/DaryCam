@@ -20,10 +20,11 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Perfil extends AppCompatActivity {
-    private TextView txtconm, txtemailm,txtnomm,txtapellm,txttelm;
+public class PerfilA extends AppCompatActivity {
+
+    private TextView txtcona, txtemaila, txtnoma, txtapella, txttela;
     String ncontrol;
-    
+
     RequestQueue requestQueue;
 
 
@@ -35,16 +36,16 @@ public class Perfil extends AppCompatActivity {
             ncontrol = extras.getString("ncontrol");
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil);
+        setContentView(R.layout.activity_perfil2);
         topbar =findViewById(R.id.topBar);
         setSupportActionBar(topbar);
         requestQueue = Volley.newRequestQueue(this);
 
-        txtconm=findViewById(R.id.txtnumcontrolM);
-        txtemailm=findViewById(R.id.txtEmailM);
-        txtnomm=findViewById(R.id.txtNombreM);
-        txtapellm=findViewById(R.id.txtApellidoM);
-        txttelm=findViewById(R.id.txttelM);
+        txtcona =findViewById(R.id.txtnumcontrolA);
+        txtemaila =findViewById(R.id.txtEmailA);
+        txtnoma =findViewById(R.id.txtNombreA);
+        txtapella =findViewById(R.id.txtApellidoA);
+        txttela =findViewById(R.id.txttelA);
 
         readuser();
     }
@@ -73,7 +74,7 @@ public class Perfil extends AppCompatActivity {
     }
 
     private void readuser() {
-        String URL = "http://192.168.100.64/darycam/fetchM.php?num_control="+ncontrol;
+        String URL = "http://192.168.100.64/darycam/fetch.php?num_control="+ncontrol;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
                 URL,
@@ -81,19 +82,19 @@ public class Perfil extends AppCompatActivity {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        String num_controlM, nombre, apellidos, password, email, telefono;
+                        String num_controlA, nombre, apellidos, password, email, telefono;
                         try {
-                            num_controlM = response.getString("num_controlM");
-                            nombre = response.getString("nombrem");
+                            num_controlA = response.getString("num_controlA");
+                            nombre = response.getString("nombrea");
                             apellidos = response.getString("apellidos");
                             email = response.getString("email");
                             telefono = response.getString("telefono");
 
-                            txtconm.setText(num_controlM);
-                            txtemailm.setText(email);
-                            txtnomm.setText(nombre);
-                            txtapellm.setText(apellidos);
-                            txttelm.setText(telefono);
+                            txtcona.setText(num_controlA);
+                            txtemaila.setText(email);
+                            txtnoma.setText(nombre);
+                            txtapella.setText(apellidos);
+                            txttela.setText(telefono);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -111,7 +112,7 @@ public class Perfil extends AppCompatActivity {
     public void onClick(View v){
         int id=v.getId();
         if (id==R.id.btnHOme){
-            Intent intent =new Intent(getApplicationContext(),Maestro.class);
+            Intent intent =new Intent(getApplicationContext(),Alumno.class);
             startActivity(intent);
 
         }

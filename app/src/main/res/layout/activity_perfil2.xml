@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Perfil"
+    tools:context=".PerfilA"
     android:background="#DAD5D5">
 
 
@@ -20,17 +20,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txttelM"
+        android:id="@+id/txttelA"
         android:layout_width="260dp"
         android:layout_height="35dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="28dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/txtApellidoM"
-        app:layout_constraintTop_toBottomOf="@+id/txtApellidoM" />
+        app:layout_constraintStart_toStartOf="@+id/txtApellidoA"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidoA" />
 
     <TextView
-        android:id="@+id/txtnumcontrolM"
+        android:id="@+id/txtnumcontrolA"
         android:layout_width="271dp"
         android:layout_height="26dp"
         android:layout_marginStart="28dp"
@@ -40,35 +40,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtApellidoM"
+        android:id="@+id/txtApellidoA"
         android:layout_width="266dp"
         android:layout_height="35dp"
         android:layout_marginTop="24dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/txtNombreM"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreM" />
+        app:layout_constraintStart_toStartOf="@+id/txtNombreA"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreA" />
 
     <TextView
-        android:id="@+id/txtNombreM"
+        android:id="@+id/txtNombreA"
         android:layout_width="264dp"
         android:layout_height="36dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/txtEmailM"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmailM" />
+        app:layout_constraintStart_toStartOf="@+id/txtEmailA"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailA" />
 
     <TextView
-        android:id="@+id/txtEmailM"
+        android:id="@+id/txtEmailA"
         android:layout_width="267dp"
         android:layout_height="32dp"
         android:layout_marginTop="28dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/txtnumcontrolM"
-        app:layout_constraintTop_toBottomOf="@+id/txtnumcontrolM" />
+        app:layout_constraintStart_toStartOf="@+id/txtnumcontrolA"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumcontrolA" />
 
     <ImageButton
-        android:id="@+id/btnHOme"
+        android:id="@+id/btnH0me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="124dp"

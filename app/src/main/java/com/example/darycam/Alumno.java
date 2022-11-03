@@ -42,7 +42,8 @@ public class Alumno extends AppCompatActivity {
                 intent.putExtra("ncontrol",ncontrol.trim());
                 startActivity(intent);
                 return true;
-            case R.id.Perfil:intent = new Intent(getApplicationContext(),Perfil.class);
+            case R.id.Perfil:intent = new Intent(getApplicationContext(),PerfilA.class);
+                intent.putExtra("ncontrol",ncontrol.trim());
                 startActivity(intent);
                 return true;
             case R.id.logout:
