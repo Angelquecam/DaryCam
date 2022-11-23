@@ -62,7 +62,7 @@ public class PerfilA extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),Modific.class);
                 startActivity(intent);
                 return true;
-            case R.id.Perfil:intent = new Intent(getApplicationContext(),Perfil.class);
+            case R.id.Perfil:intent = new Intent(getApplicationContext(),PerfilA.class);
                 startActivity(intent);
                 return true;
             case R.id.logout:
@@ -111,8 +111,9 @@ public class PerfilA extends AppCompatActivity {
     }
     public void onClick(View v){
         int id=v.getId();
-        if (id==R.id.btnHOme){
+        if (id==R.id.btnHomea){
             Intent intent =new Intent(getApplicationContext(),Alumno.class);
+            intent.putExtra("ncontrol",ncontrol.trim());
             startActivity(intent);
 
         }

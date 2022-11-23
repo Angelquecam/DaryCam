@@ -4,12 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_alumno.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_asistencia.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_maestro.xml" value="0.264" />
+        <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_main.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_modific.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_modific_m.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_perfil.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/activity_perfil2.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/list_classm.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/layout/list_classm.xml" value="0.152" />
         <entry key="..\:/Users/Quecam/Desktop/DaryCam/app/src/main/res/menu/top_bar.xml" value="0.25416666666666665" />
       </map>
     </option>

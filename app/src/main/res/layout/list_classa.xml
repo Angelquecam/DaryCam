@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cvm"
+    android:id="@+id/cv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
@@ -22,7 +22,7 @@
             >
 
             <ImageView
-                android:id="@+id/Iconoclasm"
+                android:id="@+id/Iconoclas"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_alignParentStart="true"
@@ -32,7 +32,7 @@
                 android:paddingRight="14dp"
                 app:srcCompat="@drawable/ic_history_edu_fill0_wght400_grad0_opsz48" />
             <LinearLayout
-                android:id="@+id/linearLAyoutm"
+                android:id="@+id/linearLAyout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -43,25 +43,25 @@
                 android:layout_marginLeft="4dp"
                 android:layout_toRightOf="@id/Iconoclas">
 
-                <TextView
-                    android:id="@+id/nameclasm"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="clase"
-                    android:textColor="@color/black"
-                    android:textSize="24dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/horaclasm"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="hora"
-                    android:textSize="18sp"
-                    />
+            <TextView
+                android:id="@+id/nameclas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="clase"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/horaclas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hora"
+                android:textSize="18sp"
+                />
             </LinearLayout>
             <TextView
-                android:id="@+id/estadoclasm"
+                android:id="@+id/estadoclas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"

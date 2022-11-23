@@ -17,12 +17,18 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
     private List<ListElement> mData;
     private LayoutInflater mInflater;
     private Context context;
+    final ListAdapter.OnItemClickListener listener;
 
-    public ListAdapter(List<ListElement> itemList, Context context){
+
+    public interface OnItemClickListener{
+        void onItemClick(ListElement item);
+    }
+
+    public ListAdapter(List<ListElement> itemList, Context context, ListAdapter.OnItemClickListener listener){
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
         this.mData = itemList;
-
+        this.listener = listener;
     }
     @Override
     public int getItemCount() {return mData.size(); }
@@ -30,7 +36,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
     @Override
     public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-        View view = mInflater.inflate(R.layout.list_classm,null);
+        View view = mInflater.inflate(R.layout.list_classa,null);
         return new ListAdapter.ViewHolder(view);
     }
 
@@ -51,6 +57,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             clase=itemView.findViewById(R.id.nameclas);
             hora=itemView.findViewById(R.id.horaclas);
             status=itemView.findViewById(R.id.estadoclas);
+
         }
 
 
@@ -59,6 +66,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             clase.setText(item.getClase());
             hora.setText(item.getHora());
             status.setText(item.getEstatus());
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listener.onItemClick(item);
+                }
+            });
         }
     }
 

@@ -1,6 +1,8 @@
 package com.example.darycam;
 
-public class ListElement {
+import java.io.Serializable;
+
+public class ListElement implements Serializable {
     public String color;
     public String clase;
     public String hora;

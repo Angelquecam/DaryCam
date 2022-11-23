@@ -112,6 +112,7 @@ public class Perfil extends AppCompatActivity {
         int id=v.getId();
         if (id==R.id.btnHOme){
             Intent intent =new Intent(getApplicationContext(),Maestro.class);
+            intent.putExtra("ncontrol",ncontrol.trim());
             startActivity(intent);
 
         }
