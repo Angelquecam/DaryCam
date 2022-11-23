@@ -20,7 +20,7 @@ public class Alumno extends AppCompatActivity {
     String ncontrol;
     List<ListElement> elements;
 
-
+ // espero funcione esto
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
