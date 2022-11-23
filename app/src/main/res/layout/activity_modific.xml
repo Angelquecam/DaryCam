@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Modific"
-    android:background="@drawable/backgrownd2">
+    android:background="#c8c8c8">
 
     <TextView
         android:id="@+id/txtnumcontrol"
@@ -47,11 +47,12 @@
         android:id="@+id/ednewpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/newpass"
         android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edpassw" />
 

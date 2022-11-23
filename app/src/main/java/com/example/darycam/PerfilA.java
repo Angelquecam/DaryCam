@@ -74,7 +74,7 @@ public class PerfilA extends AppCompatActivity {
     }
 
     private void readuser() {
-        String URL = "http://192.168.100.64/darycam/fetch.php?num_control="+ncontrol;
+        String URL = "http://192.168.100.15/darycam/fetch.php?num_control="+ncontrol;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
                 URL,

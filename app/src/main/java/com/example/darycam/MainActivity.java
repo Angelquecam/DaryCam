@@ -40,14 +40,14 @@ public class MainActivity extends AppCompatActivity {
         bttnalumno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validadusuario("http://192.168.100.64/darycam/validar.php"
+                validadusuario("http://192.168.100.15/darycam/validar.php"
                 );
             }
         });
         bttmaestr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validadmaestro("http://192.168.100.64/darycam/Validamaestro.php"
+                validadmaestro("http://192.168.100.15/darycam/Validamaestro.php"
                 );
             }
         });

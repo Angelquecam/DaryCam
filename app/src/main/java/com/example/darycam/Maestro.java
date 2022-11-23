@@ -17,7 +17,7 @@ import java.util.List;
 public class Maestro extends AppCompatActivity {
     private androidx.appcompat.widget.Toolbar topbar;
     String ncontrol;
-
+    List<ListElement> elementsm;
     @SuppressLint("MissingInflatedId")
 
     @Override
@@ -26,7 +26,7 @@ public class Maestro extends AppCompatActivity {
         setContentView(R.layout.activity_maestro);
 
 
-
+        finit();
         Bundle extras = getIntent().getExtras();
         if (extras !=null){
             ncontrol = extras.getString("ncontrol");
@@ -43,6 +43,39 @@ public class Maestro extends AppCompatActivity {
     getMenuInflater().inflate(R.menu.top_bar, menu);
     return super.onCreateOptionsMenu(menu);
     }
+
+    public void finit(){
+        elementsm = new ArrayList<>();
+        elementsm.add(new ListElement("#788878","Base de Datos","7Am","Actual"));
+        elementsm.add(new ListElement("#348858","Leng de interfaz","9Am","Esperando"));
+        elementsm.add(new ListElement("#588459","Automatas","5Pm","Esperando"));
+
+
+        ListAdapter listAdapterm = new ListAdapter(elementsm, this, new ListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(ListElement item) {
+                moveToAsistencia(item);
+            }
+        });
+
+
+        RecyclerView recyclerView= findViewById(R.id.recycleviewm);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(listAdapterm);
+
+
+
+    }
+
+    public void moveToAsistencia (ListElement item){
+        Intent intent = new Intent(this, AsistenciaA.class);
+        intent.putExtra("ListElement", item);
+        startActivity(intent);
+    }
+
+
+
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
 
         switch (item.getItemId()){
