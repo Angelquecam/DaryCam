@@ -54,7 +54,7 @@ public class Maestro extends AppCompatActivity {
         ListAdapter listAdapterm = new ListAdapter(elementsm, this, new ListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(ListElement item) {
-                moveToAsistencia(item);
+                moveToGenerateqr(item);
             }
         });
 
@@ -68,8 +68,8 @@ public class Maestro extends AppCompatActivity {
 
     }
 
-    public void moveToAsistencia (ListElement item){
-        Intent intent = new Intent(this, AsistenciaA.class);
+    public void moveToGenerateqr(ListElement item){
+        Intent intent = new Intent(this, infoM.class);
         intent.putExtra("ListElement", item);
         startActivity(intent);
     }
