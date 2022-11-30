@@ -57,17 +57,11 @@ public class Maestro extends AppCompatActivity {
                 moveToGenerateqr(item);
             }
         });
-
-
         RecyclerView recyclerView= findViewById(R.id.recycleviewm);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(listAdapterm);
-
-
-
     }
-
     public void moveToGenerateqr(ListElement item){
         Intent intent = new Intent(this, infoM.class);
         intent.putExtra("ListElement", item);

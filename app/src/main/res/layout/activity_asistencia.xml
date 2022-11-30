@@ -53,13 +53,14 @@
 
 
     </TextView>
+
     <Button
         android:id="@+id/bttomaasis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/horario"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="30dp"
-        android:layout_below="@id/horario"
         android:background="#DDD372C9"
         android:text="tomar asistencia"
         android:textColor="@android:color/primary_text_dark_nodisable"

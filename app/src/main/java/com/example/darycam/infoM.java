@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
@@ -16,12 +17,21 @@ public class infoM extends AppCompatActivity {
 
     Button btngenerate;
     ImageView ivqr;
+    TextView nommateriatxtm;
+    TextView horariotxtm;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_m);
+        ListElement element = (ListElement) getIntent().getSerializableExtra("ListElement");
+
+        nommateriatxtm = findViewById(R.id.nommateriam);
+        horariotxtm = findViewById(R.id.horariom);
+
+        nommateriatxtm.setText(element.getClase());
+        horariotxtm.setText(element.getHora());
 
 
         btngenerate = findViewById(R.id.bttqr);
