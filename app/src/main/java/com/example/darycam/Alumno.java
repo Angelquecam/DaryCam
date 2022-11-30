@@ -49,7 +49,7 @@ public class Alumno extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    /*private void redclas() {
+    private void redclas() {
         String URL = "http://192.168.100.15/darycam/Trye.php?num_control="+ncontrol;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
@@ -110,7 +110,7 @@ public class Alumno extends AppCompatActivity {
         });
         Volley.newRequestQueue(this).add(stringRequest);
 
-    }*/
+    }
 
     public void finit(){
         elements = new ArrayList<>();

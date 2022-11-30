@@ -62,4 +62,11 @@
         android:text="Generar QR"
         android:textColor="@android:color/primary_text_dark_nodisable"
         android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/codeQR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bttqr" />
+
 </RelativeLayout>

@@ -36,18 +36,17 @@ public class MainActivity extends AppCompatActivity {
         bttnalumno=findViewById(R.id.bttnlogin);
         bttmaestr=findViewById(R.id.bttnloginmas);
 
-
         bttnalumno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validadusuario("http://192.168.100.15/darycam/validar.php"
+                validadusuario("http://192.168.100.64/darycam/validar.php"
                 );
             }
         });
         bttmaestr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validadmaestro("http://192.168.100.15/darycam/Validamaestro.php"
+                validadmaestro("http://192.168.100.64/darycam/Validamaestro.php"
                 );
             }
         });
@@ -115,5 +114,4 @@ public class MainActivity extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
-
 }

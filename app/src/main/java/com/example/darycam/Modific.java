@@ -57,7 +57,7 @@ public class Modific extends AppCompatActivity {
         readuser();
     }
     private void readuser() {
-        String URL = "http://192.168.100.15/darycam/fetch.php?num_control="+ncontrol;
+        String URL = "http://10.132.92.217/darycam/fetch.php?num_control="+ncontrol;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
                 URL,
@@ -91,7 +91,7 @@ public class Modific extends AppCompatActivity {
     public void onClick(View v){
         int id=v.getId();
         if (id==R.id.btnmod){
-            updateUser("http://192.168.100.15/darycam/edit.php");
+            updateUser("http://10.132.92.217/darycam/edit.php");
         }
 
     }
